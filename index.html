@@ -1,32 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selection Screen</title>
+    <title>Merchandise</title>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <!--Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!--Actual CSS-->
-    <link rel="stylesheet" href="globalStyles.css">
+    <!--My CSS-->
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div class="cardHolder">
-        <div class="card" id="A">
-            <h1>Title 1</h1>
-            <div class="cardGradient"></div>
+    <h1 class="text-center">Merchandise</h1>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle='dropdown' aria-haspopup="true" aria-expanded="false">
+            Filter by: Pizza
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
+            <a class="dropdown-item" href="index.html">Pizza</a> <a class="dropdown-item" href="index.html">Pizza</a>
         </div>
-        <div class="card" id="B">
-            <div class="cardGradient"></div>
+    </div>
+
+    <div class="horizontalGrid">
+        <div class="card">
+            <img class="card-img-top" src="https://i0.wp.com/weirdandwildpizza.com/wp-content/uploads/2022/09/MAIN.jpg"
+                alt="Pizza with extra pepperoni">
+            <h5 class="card-title">Pizza with extra pepperoni</h5>
+            <p class="card-text">for those who REALLY love pepperoni</p>
+            <p class="price">Price: <strong>19.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
         </div>
-        <div class="card" id="C">
-            <div class="cardGradient"></div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://blog.pizzaovens.com/sites/default/files/styles/large/public/learning/weird-pizza.jpg"
+                alt="Pizza with extra burgers">
+            <h5 class="card-title">True American Pizza</h5>
+            <p class="card-text">makes even the truest champions fall</p>
+            <p class="price">Price: <strong>$180.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
         </div>
-        <div class="card" id="D">
-            <div class="cardGradient"></div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://media.npr.org/assets/img/2014/02/01/ccyew103_crust-in-pizza_s4x3_wide-02b1f20f033a595f1e1a118c442d61f6475faba3.jpg"
+                alt="Pizza with extra tacos">
+            <h5 class="card-title">Taco Pizza</h5>
+            <p class="card-text">Please buy before taco bell sends them</p>
+            <p class="price">Price: <strong>$39.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://static.wixstatic.com/media/a27990_ac98a122592340b4ba27030fbf66bdce~mv2.png/v1/fill/w_560,h_526,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/petty%20pizza%20pic_edited.png"
+                alt="Pizza with extra british">
+            <h5 class="card-title">British Pizza</h5>
+            <p class="card-text">It tastes really good in airlines</p>
+            <p class="price">Price: <strong>$13.49</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Image_not_available.png/640px-Image_not_available.png"
+                alt="Pizza with extra twitter">
+            <h5 class="card-title">Freedom Pizza</h5>
+            <p class="card-text">The ultimate escape from monotony</p>
+            <p class="price">Price: <strong>Free</strong></p>
+            <button type="button" class="btn btn-secondary mx-auto disabled" style="width: 12rem;"
+                data-bs-toggle="modal" data-bs-target="#PurchaseScreen">Out of
+                Stock!</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://preppykitchen.com/wp-content/uploads/2020/04/Cinnamon-rolls-Recipe-new.jpg"
+                alt="Pizza with extra cinnamon">
+            <h5 class="card-title">Glazed Pizza</h5>
+            <p class="card-text">The truest white glaze</p>
+            <p class="price">Price: <strong>$3.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://cdn.britannica.com/90/94190-050-C0BA6A58/Cereal-crops-wheat-reproduction.jpg"
+                alt="Pizza with extra rare">
+            <h5 class="card-title">Legendary Pizza</h5>
+            <p class="card-text">Straight from the farm</p>
+            <p class="price">Price: <strong>$1200.54</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://cdn.vox-cdn.com/thumbor/k-nAaRpzxrsu9aLv5qAB2S0xNtM=/47x0:759x534/1200x800/filters:focal(47x0:759x534)/cdn.vox-cdn.com/uploads/chorus_image/image/38824620/bostonpizzacake806.0.jpg"
+                alt="Pizza cake!!!">
+            <h5 class="card-title">Pizza Cake!!!</h5>
+            <p class="card-text">Pizza Cake!!!</p>
+            <p class="price">Price: <strong>Pizza Cake!!!</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Pizza Cake!!!</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://64.media.tumblr.com/6738fcc3373caace046499de924b2027/tumblr_mr4ym9sFZi1rcxvfjo1_1280.jpg"
+                alt="Pizza with extra shark">
+            <h5 class="card-title">Moist Pizza</h5>
+            <p class="card-text">Kept fresh through new technology</p>
+            <p class="price">Price: <strong>$20</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.mysuburbankitchen.com/wp-content/uploads/2015/11/DSC_6731withlabel.jpg"
+                alt="Pizza with kids">
+            <h5 class="card-title">The BEST Pizza</h5>
+            <p class="card-text">What you wish your parents let you eat</p>
+            <p class="price">Price: <strong>Childhood Trauma</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://scm-assets.constant.co/scm/unilever/2bb5223be0548fcc55c230aa5f951219/7091ce40-f505-45ec-b2db-75fa799e0d1f.jpg"
+                alt="Pizza with extra jazz">
+            <h5 class="card-title">Fancy Pizza</h5>
+            <p class="card-text">For the sophisticated</p>
+            <p class="price">Price: <strong>$60000+E910</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://laughingsquid.com/wp-content/uploads/pizzacraft-grilled-pizza-cone-set-xl.jpg"
+                alt="Pizza with extra drink">
+            <h5 class="card-title">Liquid Pizza</h5>
+            <p class="card-text">For those who need a drink, and pizza</p>
+            <p class="price">Price: <strong>$15.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://ae01.alicdn.com/kf/HTB1sn9kigvD8KJjy0Flq6ygBFXaR/MylitDear-Cutting-Plastic-Pizza-Toy-Food-Kitchen-Pretend-Play-Toy-Early-Development-and-Education-Toys-For.jpg_Q90.jpg"
+                alt="Pizza with extra reality">
+            <h5 class="card-title">Real Pizza</h5>
+            <p class="card-text">For those who keep it real</p>
+            <p class="price">Price: <strong>$29.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://i5.walmartimages.com/asr/3246a277-50ef-4503-9663-d1a5cbbdb74d.69533ce7b1e71849cdbbea572124ed82.jpeg"
+                alt="Pizza with extra price">
+            <h5 class="card-title">Expensive Pizza</h5>
+            <p class="card-text">We put lots of effort into our Pizza</p>
+            <p class="price">Price: <strong>$60.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://static01.nyt.com/images/2015/10/15/dining/15RECIPE20DIN/15RECIPE20DIN-threeByTwoMediumAt2X-v3.jpg"
+                alt="Pizza with extra spaghetti">
+            <h5 class="card-title">Spaghetti Pizza</h5>
+            <p class="card-text">The true pronunciation of lasagna</p>
+            <p class="price">Price: <strong>3 sheckles</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://lh3.googleusercontent.com/g0Jw-I6-gH2DVCpnl3u8QKZVT_meR9lcJlpyeSZ-MyvwLnyEZvgyrY5frldA8HCv55s=w280-rwa"
+                alt="Pizza with extra math">
+            <h5 class="card-title">Math Pizza</h5>
+            <p class="card-text">The first pizza π</p>
+            <p class="price">Price = <strong>3x^2-50x+20</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://ewscripps.brightspotcdn.com/dims4/default/7c825c1/2147483647/strip/true/crop/1320x743+0+70/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F73%2Ff2%2F82e190e74b78896eaea86b2309ef%2F67ae3511-916e-4962-8176-4ea0747855a9-pep-upgrd-pull-1.jpeg"
+                alt="Pizza with extra cheap">
+            <h5 class="card-title">$5 pizza</h5>
+            <p class="card-text">Cheap and Easy $5 pizza</p>
+            <p class="price">Price: <strong>$7</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://www.rtor.org/wp-content/uploads/2016/03/sad-man.jpg"
+                alt="Pizza with extra lack of pizza">
+            <h5 class="card-title">No Pizza</h5>
+            <p class="card-text">For the picky</p>
+            <p class="price">Price: <strong>$-8.99</strong></p>
+            <button type="button" class="btn btn-secondary mx-auto disabled" style="width: 12rem;"
+                data-bs-toggle="modal" data-bs-target="#PurchaseScreen">Out of
+                Stock!</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.cleverlysimple.com/wp-content/uploads/2017/03/best-waffle-recipe-2-500x500.jpg"
+                alt="Pizza with extra ?">
+            <h5 class="card-title">Pizza?</h5>
+            <p class="card-text">Best suited for breakfast</p>
+            <p class="price">Price: <strong>$12.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://emiliasfoodcravings.com/wp-content/uploads/2022/04/mini-pizzas-3.jpg"
+                alt="Pizza with extra large">
+            <h5 class="card-title">Large Pizza</h5>
+            <p class="card-text">A meal fit for kings</p>
+            <p class="price">Price: <strong>$29.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://l450v.alamy.com/450v/e56pb4/food-in-shape-of-italian-flag-italy-e56pb4.jpg"
+                alt="Pizza with extra italy">
+            <h5 class="card-title">Italian Pizza</h5>
+            <p class="card-text">Nobody does it better</p>
+            <p class="price">Price: <strong>$59.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://live.staticflickr.com/8389/8567650941_8c96d6a0e7.jpg"
+                alt="Pizza with extra spare change">
+            <h5 class="card-title">Leftover Pizza</h5>
+            <p class="card-text">None of our staff will eat it</p>
+            <p class="price">Price: <strong>$3.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card pickle">
+            <img class="card-img-top" src="https://riotfest.org/wp-content/uploads/2017/11/pickle-3.jpg" alt="PICKLE">
+            <h5 class="card-title">The Pickle</h5>
+            <p class="card-text">You want the pickle</p>
+            <p class="price">Price: <strong>$14.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://c8.alamy.com/comp/2DRPFDP/black-and-white-delicious-pizza-with-cheese-crispy-bacon-and-pineapple-on-dark-background-2DRPFDP.jpg"
+                alt="Pizza with extra old">
+            <h5 class="card-title">Old Pizza</h5>
+            <p class="card-text">It just looks old</p>
+            <p class="price">Price: <strong>$18.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://img.freepik.com/premium-vector/simple-pizza-logo-designs-template-slice-pizza-logo-logo-symbol-icon_7649-1971.jpg"
+                alt="Pizza with extra simple">
+            <h5 class="card-title">Simplified Pizza Logo</h5>
+            <p class="card-text">We follow the trends</p>
+            <p class="price">Price: <strong>$1710.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://live.staticflickr.com/5306/5769975810_0abb6eec2b_b.jpg"
+                alt="Pizza with extra crispy">
+            <h5 class="card-title">Crispy Pizza</h5>
+            <p class="card-text">The more burnt the better</p>
+            <p class="price">Price: <strong>$12.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://gimmedelicious.com/wp-content/uploads/2016/03/Rainbow-Caulfilower-Crust-Pizza-26-of-29.jpg"
+                alt="Pizza with extra LGBT">
+            <h5 class="card-title">LGBTPizza</h5>
+            <p class="card-text">We're risking our brand identity with this</p>
+            <p class="price">Price: <strong>$26.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://media.tenor.com/images/6427e466dc76c5fae2429fb6e730b0c4/tenor.png"
+                alt="Pizza with extra swimming">
+            <h5 class="card-title">Surf n' Turf Pizza</h5>
+            <p class="card-text">We turfin'</p>
+            <p class="price">Price: <strong>$79.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://thumbs.dreamstime.com/z/glass-water-pizza-white-background-isolated-49354299.jpg"
+                alt="Pizza with extra drink 2">
+            <h5 class="card-title">Pizza but also with water</h5>
+            <p class="card-text">The only pizza with water</p>
+            <p class="price">Price: <strong>$19.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.cakenknife.com/wp-content/uploads/2020/03/Pesto-Greens-Pizza_thumbnail-2-720x720.jpg"
+                alt="Pizza with extra meat">
+            <h5 class="card-title">Meat lover pizza</h5>
+            <p class="card-text">All the meat</p>
+            <p class="price">Price: <strong>$34.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://pyxis.nymag.com/v1/imgs/ea4/757/4b93b47969ddfd8687cf391721980d4735-mamas-too.w710.jpg"
+                alt="Pizza with extra square">
+            <h5 class="card-title">Square pizza</h5>
+            <p class="card-text">Truly, the peak of innovation</p>
+            <p class="price">Price: <strong>$8.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.thespruceeats.com/thmb/xuxwh4RIGcZMgaJE8u3SueM0SoA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/aqIMG_4568fhor-0b89dc5c8c494ee9828ed29805791c5a.jpg"
+                alt="Pizza with extra veggies">
+            <h5 class="card-title">Vegetarian pizza</h5>
+            <p class="card-text">All the no meat</p>
+            <p class="price">Price: <strong>$35.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/413i954Nf+L.jpg"
+                alt="Pizza with extra normal">
+            <h5 class="card-title">Normal pizza</h5>
+            <p class="card-text">No glue attached</p>
+            <p class="price">Price: <strong>$8.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61jPwTiQY9L._AC_UF1000,1000_QL80_.jpg"
+                alt="Pizza with extra tophat">
+            <h5 class="card-title">Tophat</h5>
+            <p class="card-text">Quality Tophat</p>
+            <p class="price">Price: <strong>$34.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://townsquare.media/site/341/files/2016/11/Pizza1.jpg"
+                alt="Pizza with extra delivery">
+            <h5 class="card-title">pizza delivery guy</h5>
+            <p class="card-text">He can't wait to meet you</p>
+            <p class="price">Price: <strong>$67.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://cdn.mos.cms.futurecdn.net/qTmvroik2NtHVGsfCHyyxF-1200-80.jpg"
+                alt="Pizza with extra space">
+            <h5 class="card-title">Space Pizza</h5>
+            <p class="card-text">*Space not included</p>
+            <p class="price">Price: <strong>$1214.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Triangle_warning_sign_%28red_and_yellow%29.svg/878px-Triangle_warning_sign_%28red_and_yellow%29.svg.png"
+                alt="Pizza with extra abstaction">
+            <h5 class="card-title">Abstract Pizza</h5>
+            <p class="card-text">*Abstraction included</p>
+            <p class="price">Price: <strong>$18.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://media3.giphy.com/media/4ayiIWaq2VULC/giphy.gif"
+                alt="Pizza with extra movement">
+            <h5 class="card-title">Moving Pizza</h5>
+            <p class="card-text">Peak Capitialism</p>
+            <p class="price">Price: <strong>$178.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2005%2F09%2F19%2Fbaguette-ck-1108251-4x3-1-2000.jpg"
+                alt="Pizza with extra first">
+            <h5 class="card-title">The First Pizza</h5>
+            <p class="card-text">The Original Pizza</p>
+            <p class="price">Price: <strong>$2779.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://previews.123rf.com/images/vadymvdrobot/vadymvdrobot1610/vadymvdrobot161001853/65119124-happy-hungry-man-eating-pizza-from-a-box-isolated-on-white-background.jpg"
+                alt="Pizza with extra protection">
+            <h5 class="card-title">Protection from Pizza Thief</h5>
+            <p class="card-text">He can't wait to meet you</p>
+            <p class="price">Price: <strong>$1329.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://spicedblog.com/wp-content/uploads/2019/01/Toast2-600x400.jpg"
+                alt="Pizza with extra cheese">
+            <h5 class="card-title">Cheese Pizza</h5>
+            <p class="card-text">You guys are so complicated</p>
+            <p class="price">Price: <strong>$16.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://images.thdstatic.com/productImages/0330378c-6743-40aa-834d-ec3d8ceb328b/svn/clorox-bleach-4460032263-64_1000.jpg"
+                alt="Pizza with extra pepsi">
+            <h5 class="card-title">Pepsi</h5>
+            <p class="card-text">For the sophisticated</p>
+            <p class="price">Price: <strong>$6.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://www.gaspumpheaven.com/wp-content/uploads/2008/12/OC-SHELL.png"
+                alt="Pizza with extra coke">
+            <h5 class="card-title">Coca-Cola</h5>
+            <p class="card-text">For the other sophisticated</p>
+            <p class="price">Price: <strong>$6.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://files.recipetips.com/images/glossary/t/tacoshells.jpg"
+                alt="Pizza with extra plain">
+            <h5 class="card-title">Plain pizza</h5>
+            <p class="card-text">Picky eaters get the best treatment</p>
+            <p class="price">Price: <strong>$17.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://assets1.cbsnewsstatic.com/hub/i/2015/01/19/2cc8a1d4-e1ae-4af9-b158-973d522a47b1/istock000019635253large.jpg"
+                alt="Pizza with extra children">
+            <h5 class="card-title">Kid named Pizza</h5>
+            <p class="card-text">A timeless tradition</p>
+            <p class="price">Price: <strong>$4037.99</strong></p>
+            <button type="button" class="btn btn-success mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://image.over-blog.com/X5xHgdkc24NeDmT9ZLtuOCPvCYE=/filters:no_upscale()/image%2F2024241%2F20230222%2Fob_0f6db4_waluigi-u-wario-vier-kaese-deluxe-pi.jpg"
+                alt="Pizza with extra Anmol">
+            <h5 class="card-title">Wario pizza</h5>
+            <p class="card-text">WAH</p>
+            <p class="price">Price: <strong>An arm and a leg</strong></p>
+            <button type="button" class="btn btn-warning mx-auto" style="width: 12rem;" data-bs-toggle="modal"
+                data-bs-target="#PurchaseScreen">Remove from Cart</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="PurchaseScreen" data-bs-backdrop="static" aria-labelledby="Purchase Screen"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Confirming Purchase</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="spinner-border text-primary" role="status"></div>
+                    Loading...
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
